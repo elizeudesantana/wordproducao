@@ -1,0 +1,51 @@
+projeto falsk - python
+-----------------------------------
+mkdir flask-by-example && cd flask-by-example
+git init
+python3 -m venv env
+source env/bin/activate.fish
+touch app.py .gitignore README.md requirements.txt
+pip install Flask
+pip freeze > requirements.txt
+
+-----------------------------------
+Instalação heroku
+-------------------------------------
+sudo snap install --classic heroku
+heroku --version
+heroku login  //para login in browser
+heroku login -i //para login no shell
+touch Procfile
+web: gunicorn app:app //populaciona o arquivo
+touch  runtime.txt
+python-3.7.6  //populaciona o file
+------------------------------------
+
+voltando ao projeto
+-----------------------------------
+pip install gunicorn
+pip freeze > requirements.txt
+-------------------------------------
+
+Github
+----------------------------------
+echo "# flask-by-example" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:elizeudesantana/flask-by-example.git
+git push -u origin master  //id_rsa: elizeu
+---------------------------------
+
+back
+------------------------------------
+//criar dois app no herku limite 5 app
+
+heroku create wordproducao // cria o folder heroku
+
+https://wordproducao.herokuapp.com/ | https://git.heroku.com/wordproducao.git
+
+heroku create wordpreparo
+
+https://wordpreparo.herokuapp.com/ | https://git.heroku.com/wordpreparo.git
+--------------------------------------------
